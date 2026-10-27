@@ -20,9 +20,15 @@ void insertionSort(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {5, 2, 4, 1, 3};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int i;
+    int arr[100], n, i;
+
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
 
     insertionSort(arr, n);
 
